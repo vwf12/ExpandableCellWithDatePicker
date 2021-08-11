@@ -48,7 +48,7 @@
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="sEG-Nr-Rr2">
                                 <rect key="frame" x="0.0" y="44" width="375" height="380"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="280" id="b1s-r6-dlF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="380" id="b1s-r6-dlF"/>
                                 </constraints>
                             </datePicker>
                         </subviews>
