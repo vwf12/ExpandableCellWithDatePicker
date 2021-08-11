@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7468EB0226C3CE500012AA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB0126C3CE500012AA66 /* AppDelegate.swift */; };
 		7468EB0426C3CE500012AA66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB0326C3CE500012AA66 /* SceneDelegate.swift */; };
-		7468EB0626C3CE500012AA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB0526C3CE500012AA66 /* ViewController.swift */; };
 		7468EB0B26C3CE530012AA66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7468EB0A26C3CE530012AA66 /* Assets.xcassets */; };
 		7468EB0E26C3CE530012AA66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7468EB0C26C3CE530012AA66 /* LaunchScreen.storyboard */; };
 		7468EB1726C3D1090012AA66 /* DateTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB1526C3D1090012AA66 /* DateTableCell.swift */; };
@@ -24,7 +23,6 @@
 		7468EAFE26C3CE500012AA66 /* ExpandableCellWithDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableCellWithDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7468EB0126C3CE500012AA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7468EB0326C3CE500012AA66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7468EB0526C3CE500012AA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7468EB0A26C3CE530012AA66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7468EB0D26C3CE530012AA66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7468EB0F26C3CE530012AA66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				7468EB1F26C3D1360012AA66 /* DateTableCell */,
 				7468EB0126C3CE500012AA66 /* AppDelegate.swift */,
 				7468EB0326C3CE500012AA66 /* SceneDelegate.swift */,
-				7468EB0526C3CE500012AA66 /* ViewController.swift */,
 				7468EB1926C3D11D0012AA66 /* Test.storyboard */,
 				7468EB1C26C3D1310012AA66 /* MyTableViewController.swift */,
 				7468EB1B26C3D1310012AA66 /* MyViewController.swift */,
@@ -164,7 +161,6 @@
 				7468EB2126C3D18C0012AA66 /* TestViewController.swift in Sources */,
 				7468EB1726C3D1090012AA66 /* DateTableCell.swift in Sources */,
 				7468EB1E26C3D1310012AA66 /* MyTableViewController.swift in Sources */,
-				7468EB0626C3CE500012AA66 /* ViewController.swift in Sources */,
 				7468EB0226C3CE500012AA66 /* AppDelegate.swift in Sources */,
 				7468EB1D26C3D1310012AA66 /* MyViewController.swift in Sources */,
 				7468EB0426C3CE500012AA66 /* SceneDelegate.swift in Sources */,

@@ -11,7 +11,7 @@
         <!--My View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="MyViewController" customModule="Meeting_Room" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="MyViewController" customModule="ExpandableCellWithDatePicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,13 +68,13 @@
         <!--My Table View Controller-->
         <scene sceneID="vOf-Px-aKh">
             <objects>
-                <tableViewController storyboardIdentifier="myTableViewController" id="zK5-v0-G3n" customClass="MyTableViewController" customModule="Meeting_Room" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="myTableViewController" id="zK5-v0-G3n" customClass="MyTableViewController" customModule="ExpandableCellWithDatePicker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="t9d-Lp-PpA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTableCell" rowHeight="43.5" id="yIw-ik-NC3" customClass="DateTableViewCell" customModule="Meeting_Room" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTableCell" rowHeight="43.5" id="yIw-ik-NC3" customClass="DateTableViewCell" customModule="ExpandableCellWithDatePicker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yIw-ik-NC3" id="ee4-YN-IJp">
@@ -96,7 +96,7 @@
         <!--Test View Controller-->
         <scene sceneID="zJp-AU-iKY">
             <objects>
-                <viewController id="WiU-30-cv8" customClass="TestViewController" customModule="Meeting_Room" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WiU-30-cv8" customClass="TestViewController" customModule="ExpandableCellWithDatePicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="85P-IQ-e7a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,10 +148,9 @@
                                     <constraint firstAttribute="trailing" secondItem="Eo2-sQ-d93" secondAttribute="trailing" id="yM1-2x-HG5"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDr-UG-mLs">
-                                <rect key="frame" x="195" y="717" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDr-UG-mLs">
+                                <rect key="frame" x="149.5" y="762" width="115" height="30"/>
+                                <state key="normal" title="Collapse/Expand"/>
                                 <connections>
                                     <action selector="testButton:" destination="WiU-30-cv8" eventType="touchUpInside" id="V9p-Vk-uWf"/>
                                 </connections>
@@ -163,7 +162,9 @@
                             <constraint firstItem="rhB-NP-HFw" firstAttribute="trailing" secondItem="AMX-cg-i0v" secondAttribute="trailing" id="5jo-kn-WFB"/>
                             <constraint firstItem="AMX-cg-i0v" firstAttribute="centerX" secondItem="85P-IQ-e7a" secondAttribute="centerX" id="ZWT-Mg-qYl"/>
                             <constraint firstItem="AMX-cg-i0v" firstAttribute="leading" secondItem="rhB-NP-HFw" secondAttribute="leading" id="c3Q-Qc-gNN"/>
+                            <constraint firstItem="XDr-UG-mLs" firstAttribute="centerX" secondItem="85P-IQ-e7a" secondAttribute="centerX" id="dpi-Fb-lxY"/>
                             <constraint firstItem="AMX-cg-i0v" firstAttribute="centerY" secondItem="85P-IQ-e7a" secondAttribute="centerY" id="eRX-xs-BY2"/>
+                            <constraint firstItem="rhB-NP-HFw" firstAttribute="bottom" secondItem="XDr-UG-mLs" secondAttribute="bottom" constant="16" id="tWZ-Dc-T2I"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Ss-8w-MVc"/>
