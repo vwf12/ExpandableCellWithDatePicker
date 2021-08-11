@@ -24,7 +24,7 @@ class TestViewController: UIViewController {
             
         } else {
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveLinear, animations: {
-                self.heightConstraint.constant = 444
+                self.heightConstraint.constant = 424
                         self.view.layoutIfNeeded()
                     }, completion: nil)
         }
