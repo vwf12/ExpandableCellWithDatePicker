@@ -10,9 +10,14 @@
 		7468EB0226C3CE500012AA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB0126C3CE500012AA66 /* AppDelegate.swift */; };
 		7468EB0426C3CE500012AA66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB0326C3CE500012AA66 /* SceneDelegate.swift */; };
 		7468EB0626C3CE500012AA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB0526C3CE500012AA66 /* ViewController.swift */; };
-		7468EB0926C3CE500012AA66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7468EB0726C3CE500012AA66 /* Main.storyboard */; };
 		7468EB0B26C3CE530012AA66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7468EB0A26C3CE530012AA66 /* Assets.xcassets */; };
 		7468EB0E26C3CE530012AA66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7468EB0C26C3CE530012AA66 /* LaunchScreen.storyboard */; };
+		7468EB1726C3D1090012AA66 /* DateTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB1526C3D1090012AA66 /* DateTableCell.swift */; };
+		7468EB1826C3D1090012AA66 /* DateTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7468EB1626C3D1090012AA66 /* DateTableCell.xib */; };
+		7468EB1A26C3D11D0012AA66 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7468EB1926C3D11D0012AA66 /* Test.storyboard */; };
+		7468EB1D26C3D1310012AA66 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB1B26C3D1310012AA66 /* MyViewController.swift */; };
+		7468EB1E26C3D1310012AA66 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB1C26C3D1310012AA66 /* MyTableViewController.swift */; };
+		7468EB2126C3D18C0012AA66 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468EB2026C3D18C0012AA66 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,15 @@
 		7468EB0126C3CE500012AA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7468EB0326C3CE500012AA66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7468EB0526C3CE500012AA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7468EB0826C3CE500012AA66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7468EB0A26C3CE530012AA66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7468EB0D26C3CE530012AA66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7468EB0F26C3CE530012AA66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7468EB1526C3D1090012AA66 /* DateTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTableCell.swift; sourceTree = "<group>"; };
+		7468EB1626C3D1090012AA66 /* DateTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateTableCell.xib; sourceTree = "<group>"; };
+		7468EB1926C3D11D0012AA66 /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		7468EB1B26C3D1310012AA66 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		7468EB1C26C3D1310012AA66 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		7468EB2026C3D18C0012AA66 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,28 @@
 		7468EB0026C3CE500012AA66 /* ExpandableCellWithDatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				7468EB1F26C3D1360012AA66 /* DateTableCell */,
 				7468EB0126C3CE500012AA66 /* AppDelegate.swift */,
 				7468EB0326C3CE500012AA66 /* SceneDelegate.swift */,
 				7468EB0526C3CE500012AA66 /* ViewController.swift */,
-				7468EB0726C3CE500012AA66 /* Main.storyboard */,
+				7468EB1926C3D11D0012AA66 /* Test.storyboard */,
+				7468EB1C26C3D1310012AA66 /* MyTableViewController.swift */,
+				7468EB1B26C3D1310012AA66 /* MyViewController.swift */,
+				7468EB2026C3D18C0012AA66 /* TestViewController.swift */,
 				7468EB0A26C3CE530012AA66 /* Assets.xcassets */,
 				7468EB0C26C3CE530012AA66 /* LaunchScreen.storyboard */,
 				7468EB0F26C3CE530012AA66 /* Info.plist */,
 			);
 			path = ExpandableCellWithDatePicker;
+			sourceTree = "<group>";
+		};
+		7468EB1F26C3D1360012AA66 /* DateTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				7468EB1526C3D1090012AA66 /* DateTableCell.swift */,
+				7468EB1626C3D1090012AA66 /* DateTableCell.xib */,
+			);
+			path = DateTableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +147,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7468EB1826C3D1090012AA66 /* DateTableCell.xib in Resources */,
 				7468EB0E26C3CE530012AA66 /* LaunchScreen.storyboard in Resources */,
 				7468EB0B26C3CE530012AA66 /* Assets.xcassets in Resources */,
-				7468EB0926C3CE500012AA66 /* Main.storyboard in Resources */,
+				7468EB1A26C3D11D0012AA66 /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7468EB2126C3D18C0012AA66 /* TestViewController.swift in Sources */,
+				7468EB1726C3D1090012AA66 /* DateTableCell.swift in Sources */,
+				7468EB1E26C3D1310012AA66 /* MyTableViewController.swift in Sources */,
 				7468EB0626C3CE500012AA66 /* ViewController.swift in Sources */,
 				7468EB0226C3CE500012AA66 /* AppDelegate.swift in Sources */,
+				7468EB1D26C3D1310012AA66 /* MyViewController.swift in Sources */,
 				7468EB0426C3CE500012AA66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +174,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7468EB0726C3CE500012AA66 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7468EB0826C3CE500012AA66 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7468EB0C26C3CE530012AA66 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
