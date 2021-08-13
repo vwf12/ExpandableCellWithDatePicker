@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -36,7 +35,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
                                     <constraint firstItem="NaF-yh-1Tk" firstAttribute="top" secondItem="w14-FW-7CU" secondAttribute="top" constant="11" id="2bu-Pc-SnI"/>
                                     <constraint firstAttribute="trailing" secondItem="NaF-yh-1Tk" secondAttribute="trailing" constant="17" id="38r-Kc-g0s"/>
@@ -45,14 +43,13 @@
                                     <constraint firstAttribute="height" constant="44" id="rEM-lv-tOd"/>
                                 </constraints>
                             </view>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="sEG-Nr-Rr2">
+                            <datePicker contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="sEG-Nr-Rr2">
                                 <rect key="frame" x="0.0" y="44" width="375" height="380"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="380" id="b1s-r6-dlF"/>
-                                </constraints>
+                                <connections>
+                                    <action selector="setDate:" destination="KGk-i7-Jjw" eventType="valueChanged" id="mEV-in-niv"/>
+                                </connections>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="w14-FW-7CU" firstAttribute="bottom" secondItem="sEG-Nr-Rr2" secondAttribute="top" id="IwA-uD-Dda"/>
                         </constraints>
@@ -71,19 +68,13 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="baseView" destination="w14-FW-7CU" id="LnV-qV-MGH"/>
+                <outlet property="dateLabel" destination="NaF-yh-1Tk" id="eKx-oh-Khe"/>
                 <outlet property="datePicker" destination="sEG-Nr-Rr2" id="tvs-Jj-fd2"/>
                 <outlet property="fullView" destination="H2p-sc-9uM" id="FcO-nL-VPS"/>
                 <outlet property="stackView" destination="rxW-4N-bhL" id="wuE-rQ-7Ps"/>
+                <outlet property="statusLabel" destination="JHp-6Q-yhw" id="Gb8-hG-HGB"/>
             </connections>
             <point key="canvasLocation" x="105.07246376811595" y="95.758928571428569"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

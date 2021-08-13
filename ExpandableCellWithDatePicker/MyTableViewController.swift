@@ -9,7 +9,7 @@ import UIKit
 
 final class MyTableViewController: UITableViewController {
     var date: Date?
-    var datePickerVisible = false
+    var datePickerHidden = true
     var datePickerHeght: CGFloat = 0
     
     override func viewDidLoad() {
@@ -31,17 +31,17 @@ final class MyTableViewController: UITableViewController {
     }
     
 //    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        var height: CGFloat = 44
 //
-//        if indexPath.row == 0 {
-//            if datePickerVisible {
-//                height = 44 + datePickerHeght
 //
-//            }
+//        if indexPath.section == 0 && indexPath.row == 0 {
+//            let height: CGFloat = datePickerHidden ? 44.0 : 44.0 + datePickerHeght
+//            print("Height in tableview: \(height)")
+//            return height
 //        }
-//        print("Date picker height: \(datePickerHeght)")
-//        print("Cell  height: \(height)")
-//        return height
+//
+//        return super.tableView(tableView, heightForRowAt: indexPath)
+//
+//
 //    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,20 +50,34 @@ final class MyTableViewController: UITableViewController {
         else {
             return UITableViewCell()
         }
-        datePickerHeght = cell.datePickerHeight
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) as? DateTableCell {
-            datePickerVisible.toggle()
-            print("\(tableView.rowHeight)")
-            print("\(cell.frame.height)")
-
-            cell.datePicker.isHidden.toggle()
-            tableView.beginUpdates()
-            tableView.endUpdates()
-            tableView.deselectRow(at: indexPath, animated: false)
-               }
+//        if let cell = tableView.cellForRow(at: indexPath) as? DateTableCell {
+//            datePickerHidden.toggle()
+//            print("\(tableView.rowHeight)")
+//            print("\(cell.frame.height)")
+//
+//            cell.datePicker.isHidden.toggle()
+//            tableView.beginUpdates()
+//            tableView.endUpdates()
+//            tableView.deselectRow(at: indexPath, animated: false)
+//               }
+//        if let cell = tableView.cellForRow(at: indexPath) as? DateTableCell {
+//        let pickerIndex = IndexPath(row: 0, section: 0)
+//        if pickerIndex == indexPath {
+//
+//            datePickerHidden.toggle()
+////            cell.datePicker.isHidden.toggle()
+////            cell.tapAction()
+////            UIView.animate(withDuration: 0.3, animations: { () -> Void in
+//                self.tableView.beginUpdates()
+//                // apple bug fix - some TV lines hide after animation
+//                self.tableView.deselectRow(at: indexPath, animated: true)
+//                self.tableView.endUpdates()
+////            })
+//        }
+//    }
     }
     }
